@@ -1,0 +1,35 @@
+
+/* font-family: 'Cinzel', serif; */
+:root{
+    --myWhite: rgb(255, 255, 255);
+    --myDark: rgb(8, 28, 21);
+}
+
+.textWhite{
+    color: var(--myWhite);
+}
+
+.textDark{
+    color: var(--myDark);
+}
+
+.btnWhite{
+    background-color: var(--myWhite);
+}
+
+.btnDark{
+    background-color: var(--myDark);
+}
+
+.nav-link{
+    color: var(--myWhite);
+    font-family: 'Cinzel', serif;
+}
+
+.nav-link:focus{
+    color: var(--myWhite);
+}
+
+.h1, h1, .h2, h2, .h3, h3, .h4 , h4, p, a, .btn, ::placeholder, span{
+    font-family: 'Cinzel', serif;
+}
