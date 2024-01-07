@@ -15,3 +15,4 @@ use App\Http\Controllers\PublicController;
 */
 
 Route::get('/', [PublicController::class, 'welcome'])->name('welcome');
+Route::get('/presentazione', [PublicController::class, 'artistpage'])->name('artistpage');

@@ -14,7 +14,7 @@
                         <a class="nav-link" aria-current="page" href="{{route('welcome')}}">Home</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Chi sono</a>
+                        <a class="nav-link" href="{{route('artistpage')}}">Chi sono</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#">I miei lavori</a>
