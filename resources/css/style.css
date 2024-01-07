@@ -30,11 +30,44 @@
     color: var(--myWhite);
 }
 
+.btn-nav{
+    border-color: var(--myWhite);
+    cursor: none;
+    
+}
+
+.btn-nav:hover{
+    border-color: none;
+}
+
 .h1, h1, .h2, h2, .h3, h3, .h4 , h4, p, a, .btn, ::placeholder, span{
     font-family: 'Cinzel', serif;
 }
 
 .logo-custom{
     height: 70px;
+    
+}
+
+.header{
+    background-image: url(/public/media/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.card {
+    width: 290px;
+    height: 354px;
+    border-radius: 20px;
+    border: 2px solid var(--myDark);
+}
+
+.img-custom{
+    width: 287px;
+    height: 351px;
+    border-radius: 20px;
     
 }
