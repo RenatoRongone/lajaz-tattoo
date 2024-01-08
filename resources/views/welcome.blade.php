@@ -8,7 +8,7 @@
             </div>
         </div>
     </header>
-    <main class="container vh-100 mt-2">
+    <main class="container vh-100 mt-5 pt-5">
         <div class="row">
             <div class="col-12">
                 <h2 class="text-center my-3">
