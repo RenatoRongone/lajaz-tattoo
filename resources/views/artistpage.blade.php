@@ -1,10 +1,12 @@
 <x-layout>
     <div class="container mt-5 pt-5">
         <div class="row">
-            <div class="col-12 my-5">
-                <h1 class="text-center">
-                    Chi è La Jaz
-                </h1>
+            <div data-aos="fade-right">
+                <div class="col-12 my-5">
+                    <h1 class="text-center">
+                        Chi è l'Artista?
+                    </h1>
+                </div>
             </div>
             <div class="row my-5 ">
                 <div class="col-4">

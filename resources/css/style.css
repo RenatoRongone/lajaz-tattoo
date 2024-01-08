@@ -26,7 +26,8 @@
     font-family: 'Cinzel', serif;
 }
 
-.nav-link:focus{
+
+.nav-link:hover{
     color: var(--myWhite);
 }
 
