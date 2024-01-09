@@ -13,4 +13,8 @@ class PublicController extends Controller
     public function artistpage(){
         return view('artistpage');
     }
+    
+    public function works(){
+        return view('works');
+    }
 }

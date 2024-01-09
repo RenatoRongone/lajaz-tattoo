@@ -1,7 +1,7 @@
 <x-layout>
     <div class="container mt-5 pt-5">
-        <div class="row">
-                <div class="col-12 my-5" data-aos="fade-right">
+        <div class="row my-5">
+                <div class="col-12" data-aos="fade-right">
                     <h1 class="text-center">
                         Chi è l'Artista?
                     </h1>
