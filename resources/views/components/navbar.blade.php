@@ -2,7 +2,6 @@
     <div class="container-fluid ">
         <a class="navbar-brand textWhite ps-5" href="{{route('welcome')}}">
             <img src="/media/logoB.png" alt="Logo" class="logo-custom">
-            {{-- logo da sistemare --}}
         </a>
         <button class="navbar-toggler btn-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
