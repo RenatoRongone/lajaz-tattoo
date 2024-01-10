@@ -141,3 +141,7 @@
 .btn-dark{
     background-color: var(--myDark);
 }
+
+.h-custom{
+    height: 77vh;
+}
