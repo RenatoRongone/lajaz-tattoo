@@ -22,6 +22,7 @@
                 <i class="fa-brands fa-x-twitter textDark"></i>
             </a>
         </li>
+        @guest    
         <li class="ms-4">
             <a class="text-body-secondary" href="{{route('register')}}">
                 <i class="fa-solid fa-user textDark"></i>
@@ -32,6 +33,8 @@
                 <i class="fa-solid fa-right-to-bracket textDark"></i>
             </a>
         </li>
+        @endguest
+        @auth
         <li class="ms-4">
             <form action="{{route('logout')}}" method="POST">
                 @csrf
@@ -40,5 +43,6 @@
                 </button>
             </form>
         </li>
+        @endauth
     </ul>
 </footer>

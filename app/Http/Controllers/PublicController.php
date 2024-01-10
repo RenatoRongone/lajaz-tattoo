@@ -17,4 +17,8 @@ class PublicController extends Controller
     public function works(){
         return view('works');
     }
+
+    public function loadproject(){
+        return view('loadproject');
+    }
 }
