@@ -23,7 +23,6 @@
             </a>
         </li>
         <li class="ms-4">
-
             <a class="text-body-secondary" href="{{route('register')}}">
                 <i class="fa-solid fa-user textDark"></i>
             </a>
@@ -35,6 +34,7 @@
         </li>
         <li class="ms-4">
             <form action="{{route('logout')}}" method="POST">
+                @csrf
                 <button class="btn-footer" type="submit">
                     <i class="fa-solid fa-right-from-bracket textDark"></i>
                 </button>
