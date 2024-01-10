@@ -7,7 +7,7 @@
                 </h1>
             </div>
             <div class="col-6">
-                <form method="POST" action="/register">
+                <form method="POST" action="/login">
                     @csrf
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Inserisci Mail</label>
