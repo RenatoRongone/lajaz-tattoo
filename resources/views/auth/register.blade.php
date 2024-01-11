@@ -19,7 +19,13 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+                        <div class="input-group">    
+                            <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="fa-regular fa-eye cursor" id='openEye'></i>
+                                {{-- fare js per occhio con il cambio della classe da fa-eye a fa-eye-slash con il cambio da type pass a type text --}}
+                            </span>
+                        </div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Conferma Password</label>
