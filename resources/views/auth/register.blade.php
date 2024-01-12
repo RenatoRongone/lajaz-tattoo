@@ -21,8 +21,10 @@
                         <label for="password" class="form-label">Password</label>
                         <div class="input-group">    
                             <input name="password" type="password" class="form-control" id="password">
-                            <span class="input-group-text" id="basic-addon1">
-                                <i class="fa-regular fa-eye cursor" id='openEye'></i>
+                            <span>
+                                <button type="button" class="input-group-text" id="basic-addon1">
+                                    <i class="fa-regular fa-eye cursor" id='openEye'></i>
+                                </button>
                                 {{-- fare js per occhio con il cambio della classe da fa-eye a fa-eye-slash con il cambio da type pass a type text --}}
                             </span>
                         </div>

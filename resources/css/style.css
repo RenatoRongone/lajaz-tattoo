@@ -153,6 +153,14 @@
     cursor: pointer;
     color: var(--myDark);
 }
+.closeEye{
+    background-image: url(/public/media/eye-slash-regular.svg);
+    background-size: 2vh;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    color: var(--myDark);
+}
+
 
 .cursor{
     cursor: pointer;

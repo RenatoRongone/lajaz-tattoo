@@ -8,6 +8,7 @@ function showpassword(){
             openEye.classList.remove('fa-eye');
             openEye.classList.add('fa-eye-slash');
         }else{
+        openEye.type='password';
             if(openEye.classList.contains('fa-eye-slash')){
                 openEye.classList.remove('fa-eye-slash');
                 openEye.classList.add('fa-eye');
@@ -16,6 +17,8 @@ function showpassword(){
     }
 }
 
-openEye?.addEventListener('click', ()=>{
+if(openEye != null){
+    openEye?.addEventListener('click', ()=>{
         showpassword();
     })
+}
