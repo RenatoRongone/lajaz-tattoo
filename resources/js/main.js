@@ -1,24 +1,45 @@
 
-let openEye= document.querySelector('#openEye');
+let eye= document.querySelector('#eye');
+let password= document.querySelector('#password');
+
+let eye_conf= document.querySelector('#eye_conf');
+let confirm_password= document.querySelector('#confirm_password')
+
+let eye_log= document.querySelector('#eye_log');
+let pass_log= document.querySelector('#pass_log')
+
 
 function showpassword(){
-    if(openEye.type==='password'){
-        openEye.type='text';
-        if(openEye.classList.contains('fa-eye')){
-            openEye.classList.remove('fa-eye');
-            openEye.classList.add('fa-eye-slash');
-        }else{
-        openEye.type='password';
-            if(openEye.classList.contains('fa-eye-slash')){
-                openEye.classList.remove('fa-eye-slash');
-                openEye.classList.add('fa-eye');
-            }
+    if(password.type==='password'){
+        password.type='text';
+        eye.classList.remove('fa-eye');
+        eye.classList.add('fa-eye-slash');
+        }
+        else{
+            password.type='password';
+            eye.classList.remove('fa-eye-slash');
+            eye.classList.add('fa-eye');
         }
     }
-}
 
-if(openEye != null){
-    openEye?.addEventListener('click', ()=>{
+eye?.addEventListener('click', ()=>{
         showpassword();
-    })
-}
+})
+
+
+function showpassword_log(){
+    if(pass_log.type==='password'){
+        pass_log.type='text';
+        eye_log.classList.remove('fa-eye');
+        eye_log.classList.add('fa-eye-slash');
+        }
+        else{
+            pass_log.type='password';
+            eye_log.classList.remove('fa-eye-slash');
+            eye_log.classList.add('fa-eye');
+        }
+    }
+
+eye_log?.addEventListener('click', ()=>{
+        showpassword_log();
+})

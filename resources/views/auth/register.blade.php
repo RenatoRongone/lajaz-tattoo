@@ -21,17 +21,19 @@
                         <label for="password" class="form-label">Password</label>
                         <div class="input-group">    
                             <input name="password" type="password" class="form-control" id="password">
-                            <span>
-                                <button type="button" class="input-group-text" id="basic-addon1">
-                                    <i class="fa-regular fa-eye cursor" id='openEye'></i>
-                                </button>
-                                {{-- fare js per occhio con il cambio della classe da fa-eye a fa-eye-slash con il cambio da type pass a type text --}}
-                            </span>
+                            <button type="button" class="input-group-text" id="basic-addon1">
+                                <i class="fa-regular fa-eye cursor" id='eye'></i>
+                            </button>
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="confirm_password" class="form-label">Conferma Password</label>
-                        <input name="password_confirmation" type="password" class="form-control" id="confirm_password" aria-describedby="emailHelp">
+                        <div class="input-group">    
+                            <input name="password_confirmation" type="password_conf" class="form-control" id="confirm_password" aria-describedby="emailHelp">
+                            <button type="button" class="input-group-text" id="basic-addon1">
+                                <i class="fa-regular fa-eye cursor" id='eye_conf'></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="d-flex justify-content-center">
                         <button type="submit" class="btn btn-dark d-flex align-items-center justify-content-center ">Registrati</button>

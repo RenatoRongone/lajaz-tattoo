@@ -15,7 +15,12 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+                        <div class="input-group">    
+                            <input name="password" type="password" class="form-control" id="pass_log">
+                            <button type="button" class="input-group-text" id="basic-addon1">
+                                <i class="fa-regular fa-eye cursor" id='eye_log'></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="d-flex justify-content-center">
                         <button type="submit" class="btn btn-dark d-flex align-items-center justify-content-center">Accedi</button>
