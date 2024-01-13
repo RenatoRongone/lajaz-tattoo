@@ -29,7 +29,7 @@
                     <div class="mb-3">
                         <label for="confirm_password" class="form-label">Conferma Password</label>
                         <div class="input-group">    
-                            <input name="password_confirmation" type="password_conf" class="form-control" id="confirm_password" aria-describedby="emailHelp">
+                            <input name="password_confirmation" type="password" class="form-control" id="confirm_password">
                             <button type="button" class="input-group-text" id="basic-addon1">
                                 <i class="fa-regular fa-eye cursor" id='eye_conf'></i>
                             </button>

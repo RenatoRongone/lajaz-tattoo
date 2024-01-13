@@ -27,6 +27,25 @@ eye?.addEventListener('click', ()=>{
 })
 
 
+
+function showpassword_conf(){
+    if(confirm_password.type==='password'){
+        confirm_password.type='text';
+        eye_conf.classList.remove('feye_conf');
+        eye_conf.classList.add('fa-eye-slash');
+        }
+        else{
+            confirm_password.type='password';
+            eye_conf.classList.remove('fa-eye-slash');
+            eye_conf.classList.add('fa-eye');
+        }
+    }
+
+eye_conf?.addEventListener('click', ()=>{
+        showpassword_conf();
+})
+
+
 function showpassword_log(){
     if(pass_log.type==='password'){
         pass_log.type='text';
