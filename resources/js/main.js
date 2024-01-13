@@ -31,7 +31,7 @@ eye?.addEventListener('click', ()=>{
 function showpassword_conf(){
     if(confirm_password.type==='password'){
         confirm_password.type='text';
-        eye_conf.classList.remove('feye_conf');
+        eye_conf.classList.remove('fa-eye');
         eye_conf.classList.add('fa-eye-slash');
         }
         else{
