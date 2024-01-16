@@ -18,7 +18,7 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="{{route('works')}}">I miei lavori</a>
                     </li>
-                    @if(Auth::user() && Auth::user()->is_admin)
+                    @if(Auth::user())
                     <li class="nav-item active">
                         <a class="nav-link" href="{{route('loadproject')}}">Carica Proggetti</a>
                     </li>
