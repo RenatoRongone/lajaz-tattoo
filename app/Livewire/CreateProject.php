@@ -11,6 +11,8 @@ class CreateProject extends Component
     public $title;
     public $description;
     public $user_id;
+    public $project;
+
 
     public function store(){
         $project= Project::create([
