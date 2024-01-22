@@ -42,7 +42,10 @@ class ProjectResource extends Resource
             ->columns([
                 TextColumn::make('title'),
                 TextColumn::make('description'),
-                // FileUpload::make('path')
+                // Image::make('path')
+                // ->thumbnail(function($value){
+                //     return $value;
+                // })
             ])
             ->filters([
                 //
