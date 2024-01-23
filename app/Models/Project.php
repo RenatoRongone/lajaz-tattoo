@@ -14,6 +14,7 @@ class Project extends Model
     protected $fillable=[
         'title',
         'description',
+        'img',
         'user_id',
     ];
 
@@ -22,8 +23,8 @@ class Project extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function images()
-    {
-        return $this->hasMany(Image::class);
-    }
+//     public function images()
+//     {
+//         return $this->hasMany(Image::class);
+//     }
 }

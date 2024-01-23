@@ -11,6 +11,7 @@ use Filament\Tables\Table;
 use Filament\Resources\Resource;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Forms\Components\FileUpload;
 use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\ProjectResource\Pages;
@@ -29,7 +30,7 @@ class ProjectResource extends Resource
             ->schema([
                 TextInput::make('title')->required(),
                 TextInput::make('description'),
-                FileUpload::make('Image' , 'path')
+                FileUpload::make('img')
                 ->required()
                 ->image()
                 ->imageEditor(),
@@ -42,10 +43,9 @@ class ProjectResource extends Resource
             ->columns([
                 TextColumn::make('title'),
                 TextColumn::make('description'),
-                // Image::make('path')
-                // ->thumbnail(function($value){
-                //     return $value;
-                // })
+                ImageColumn::make('img')
+                ->size(40)
+                ->square()
             ])
             ->filters([
                 //
