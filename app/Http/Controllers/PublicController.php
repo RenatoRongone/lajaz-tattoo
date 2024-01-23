@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Project;
 use Illuminate\Http\Request;
 
 class PublicController extends Controller
 {
     public function welcome() {
-        return view('welcome');
+        $projects= Project::all()->sortBy('created_at');
+        return view('welcome', compact('projects'));
     }
 
     public function artistpage(){

@@ -15,18 +15,20 @@
                     I miei ultimi lavori
                 </h2>
             </div>
+            @foreach ($projects as $project)
             <div class="col-12 col-md-3 justify-content-center d-flex">
                 <div class = "card">
-                    <img src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80" alt="Image tattoo">
+                    <img src='{{Storage::url($project->img)}}' alt="Image tattoo">
                     <div class="card-content">
                         <h2 class="textWhite">
-                            Titolo
+                            {{$project->title}}
                         </h2>
                     </div>
                     <a href="#" class="button textWhite">
                     </a>
                 </div>
             </div>
+            @endforeach
         </div>
     </main>
 </x-layout>
