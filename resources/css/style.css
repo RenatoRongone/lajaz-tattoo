@@ -159,3 +159,10 @@
 .page-link{
     color: var(--myDark);
 }
+
+.pagination {
+    --bs-pagination-focus-box-shadow: none;
+    --bs-pagination-hover-color: var(--myDark);
+    --bs-pagination-hover-border-color: var(--myDark);
+    --bs-pagination-focus-color: var(--myDark);
+}
