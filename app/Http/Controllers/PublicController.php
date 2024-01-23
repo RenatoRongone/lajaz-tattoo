@@ -8,19 +8,7 @@ use Illuminate\Http\Request;
 class PublicController extends Controller
 {
     public function welcome() {
-        $projects= Project::all()->sortBy('created_at');
+        $projects= Project::orderBy('created_at', 'DESC')->take(4)->get();
         return view('welcome', compact('projects'));
-    }
-
-    public function artistpage(){
-        return view('artistpage');
-    }
-    
-    public function works(){
-        return view('works');
-    }
-
-    public function loadproject(){
-        return view('loadproject');
     }
 }

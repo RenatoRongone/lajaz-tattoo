@@ -149,3 +149,13 @@
 .cursor{
     cursor: pointer;
 }
+
+.page-link.active, .active > .page-link {
+    color: var(--myWhite);
+    background-color: var(--myDark);
+    border-color: var(--myWhite);
+}
+
+.page-link{
+    color: var(--myDark);
+}

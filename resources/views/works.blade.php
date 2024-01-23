@@ -6,18 +6,23 @@
                     I Miei Lavori
                 </h1>
             </div>
-            <div class="col-12 col-md-3 m-3 d-flex justify-content-center">
+            @foreach ($projects as $project)
+            <div class="col-12 col-md-3 justify-content-center d-flex my-2">
                 <div class = "card">
-                    <img src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80" alt="Image tattoo">
+                    <img src='{{Storage::url($project->img)}}' alt="Image tattoo">
                     <div class="card-content">
                         <h2 class="textWhite">
-                            Titolo
+                            {{$project->title}}
                         </h2>
                     </div>
                     <a href="#" class="button textWhite">
                     </a>
                 </div>
-            </div>            
+            </div>
+            @endforeach
+            <div class="col-12 d-flex justify-content-center mt-5">
+                {{$projects->links()}}
+            </div>
         </div>
     </div>
 </x-layout>

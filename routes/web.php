@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\ProjectController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +16,8 @@ use App\Http\Controllers\PublicController;
 */
 
 Route::get('/', [PublicController::class, 'welcome'])->name('welcome');
-Route::get('/presentazione', [PublicController::class, 'artistpage'])->name('artistpage');
-Route::get('/i-miei-lavori', [PublicController::class, 'works'])->name('works');
-Route::get('/carica-progetto', [PublicController::class, 'loadproject'])->name('loadproject');
+Route::get('/presentazione', [ProjectController::class, 'artistpage'])->name('artistpage');
+Route::get('/i-miei-lavori', [ProjectController::class, 'works'])->name('works');
+Route::get('/carica-progetto', [ProjectController::class, 'loadproject'])->name('loadproject');
 
 
