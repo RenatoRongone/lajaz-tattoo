@@ -15,7 +15,7 @@
                             {{$project->title}}
                         </h2>
                     </div>
-                    <a href="#" class="button textWhite">
+                    <a href="{{route('showproject', compact('project'))}}" class="button textWhite">
                     </a>
                 </div>
             </div>

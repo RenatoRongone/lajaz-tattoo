@@ -1,12 +1,12 @@
 <x-layout>
     <div class="container mt-5 pt-5">
         <div class="row my-5">
-                <div class="col-12" data-aos="fade-right">
+                <div class="col-12">
                     <h1 class="text-center">
                         Chi è l'Artista?
                     </h1>
                 </div>
-            <div class="row my-5 justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-center">
+            <div class="row my-5 justify-content-center">
                 <div class="col-12 col-md-4 d-flex justify-content-center ">
                     <img class="img-custom" src="/media/artist.jpg" alt="atist photo">
                 </div>

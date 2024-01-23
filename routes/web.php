@@ -19,5 +19,6 @@ Route::get('/', [PublicController::class, 'welcome'])->name('welcome');
 Route::get('/presentazione', [ProjectController::class, 'artistpage'])->name('artistpage');
 Route::get('/i-miei-lavori', [ProjectController::class, 'works'])->name('works');
 Route::get('/carica-progetto', [ProjectController::class, 'loadproject'])->name('loadproject');
+Route::get('/progetto-nel-dettaglio/{project}', [ProjectController::class, 'showproject'])->name('showproject');
 
 
