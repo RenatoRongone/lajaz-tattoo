@@ -17,16 +17,16 @@
             </div>
             @foreach ($projects as $project)
             <div class="col-12 col-md-3 justify-content-center d-flex">
-                <div class = "card">
-                    <img src='{{Storage::url($project->img)}}' alt="Image tattoo">
-                    <div class="card-content">
-                        <h2 class="textWhite">
-                            {{$project->title}}
-                        </h2>
+                <a href="{{route('showproject', compact('project'))}}" class="button textWhite">
+                    <div class = "card">
+                        <img src='{{Storage::url($project->img)}}' alt="Image tattoo">
+                        <div class="card-content">
+                            <h2 class="textWhite">
+                                {{$project->title}}
+                            </h2>
+                        </div>
                     </div>
-                    <a href="{{route('showproject', compact('project'))}}" class="button textWhite">
-                    </a>
-                </div>
+                </a>
             </div>
             @endforeach
         </div>
