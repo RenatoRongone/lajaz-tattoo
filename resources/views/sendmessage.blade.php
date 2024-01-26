@@ -3,7 +3,7 @@
         <div class="row my-5 justify-content-center ">
                 <div class="col-12">
                     <h1 class="text-center">
-                        Carica Progetto
+                        Invia Messaggio
                     </h1>
                 </div>
                 <livewire:create-project />

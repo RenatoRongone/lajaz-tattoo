@@ -16,8 +16,8 @@ class ProjectController extends Controller
         return view('works', compact('projects'));
     }
 
-    public function loadproject(){
-        return view('loadproject');
+    public function sendmessage(){
+        return view('sendmessage');
     }
 
     public function showproject(Project $project){

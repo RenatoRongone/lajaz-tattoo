@@ -18,7 +18,7 @@ use App\Http\Controllers\ProjectController;
 Route::get('/', [PublicController::class, 'welcome'])->name('welcome');
 Route::get('/presentazione', [ProjectController::class, 'artistpage'])->name('artistpage');
 Route::get('/i-miei-lavori', [ProjectController::class, 'works'])->name('works');
-Route::get('/carica-progetto', [ProjectController::class, 'loadproject'])->name('loadproject');
+Route::get('/invia-messaggio', [ProjectController::class, 'sendmessage'])->middleware('auth')->name('sendmessage');
 Route::get('/progetto-nel-dettaglio/{project}', [ProjectController::class, 'showproject'])->name('showproject');
 Route::redirect('/login/admin', '/admin/login')->middleware('is_admin')->name('loginAdmin');
 

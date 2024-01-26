@@ -20,7 +20,7 @@
                     </li>
                     @if(Auth::user())
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{route('loadproject')}}">Carica Proggetti</a>
+                        <a class="nav-link" href="{{route('sendmessage')}}">Invia Messaggio</a>
                     </li>
                     @endif
                 </ul>
