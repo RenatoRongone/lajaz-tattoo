@@ -1,11 +1,17 @@
 <x-layout>
     <header class="container-fluid vh-100 ">
+        @if (session()->has('message'))
+                    <h2 class="col-12 alert textDark text-center mt-5 pt-5" id="message">
+                        {{ session('message') }}
+                    </h2>
+                @endif
         <div class="row h-100"> 
             <div class="col-12 d-flex align-items-center justify-content-center header">
                 <h1 class="display-1 textWhite" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     Tattoo-Studio
                 </h1>
             </div>
+                
         </div>
     </header>
     <main class="container vh-100 mt-5 pt-5">

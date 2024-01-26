@@ -20,5 +20,6 @@ Route::get('/presentazione', [ProjectController::class, 'artistpage'])->name('ar
 Route::get('/i-miei-lavori', [ProjectController::class, 'works'])->name('works');
 Route::get('/carica-progetto', [ProjectController::class, 'loadproject'])->name('loadproject');
 Route::get('/progetto-nel-dettaglio/{project}', [ProjectController::class, 'showproject'])->name('showproject');
+Route::redirect('/login/admin', '/admin/login')->middleware('is_admin')->name('loginAdmin');
 
 

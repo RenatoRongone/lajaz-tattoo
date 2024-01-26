@@ -13,6 +13,10 @@
     color: var(--myDark);
 }
 
+.bgDark{
+    background-color: var(--myDark);
+}
+
 .btnWhite{
     background-color: var(--myWhite);
 }

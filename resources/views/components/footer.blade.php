@@ -44,5 +44,15 @@
             </form>
         </li>
         @endauth
+        @if (Auth::user() && Auth::user()->is_admin)
+        <li class="ms-4">
+            <a class="text-body-secondary" href="{{route('loginAdmin')}}">
+                <i class="fa-solid fa-user-tie textDark"></i>
+            </a>
+        </li>
+        @endif
     </ul>
 </footer>
+
+
+

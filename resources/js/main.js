@@ -8,6 +8,20 @@ let confirm_password= document.querySelector('#confirm_password')
 let eye_log= document.querySelector('#eye_log');
 let pass_log= document.querySelector('#pass_log')
 
+let message= document.querySelector('#message');
+
+setTimeout(() => {
+    if (message) {
+        message.classList.add('hiddenAnimation')
+    }
+    
+}, 2000);
+
+setTimeout(() => {
+    if (message) {
+        message.classList.add('d-none')
+    }
+}, 2500);
 
 function showpassword(){
     if(password.type==='password'){
